@@ -1,0 +1,10 @@
+californian_env/
+
+logs.log
+
+notebook/catboost_info/
+
+__pycache__/
+.ipynb_checkpoints/
+
+*.pyc
