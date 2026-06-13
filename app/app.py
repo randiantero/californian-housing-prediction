@@ -16,18 +16,18 @@ st.set_page_config(
 # Load Data and Model
 @st.cache_data
 def load_data():
-    return pd.read_csv("data\california_housing_train_fe.csv")
+    return pd.read_csv("../data/california_housing_train_fe.csv")
 
 @st.cache_resource
 def load_model():
-    return joblib.load("models\catboost_model1.pkl")
+    return joblib.load("..models/catboost_model1.pkl")
 
 # Define Data and Model
 df = load_data()
 model = load_model()
 
 # Title
-st.image("src\Photo-3-1800x1000.jpg")
+st.image("../src/Photo-3-1800x1000.jpg")
 st.title("Californian Housing Price Prediction")
 st.markdown(
     """
@@ -91,7 +91,7 @@ if total_bedroom > total_rooms:
 # About Me
 st.sidebar.markdown("---")
 with st.sidebar.expander("About Me"):
-    st.image("src\Screenshot 2026-06-12 164759.png")
+    st.image("../src/Screenshot 2026-06-12 164759.png")
     st.write("""
              Albertus Antero Arnayusrandita
 
